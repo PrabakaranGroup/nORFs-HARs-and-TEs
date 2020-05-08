@@ -1,5 +1,5 @@
 # nORFs, HARs and TEs
-Instructions, R code, input files and supplementary data for a project studying regulation of nORF transcript expression in brain disorders.
+Instructions, R code, selected input files and supplementary data for a project studying regulation of nORF transcript expression in brain disorders.
 
 The latest version of R is available at: https://cran.r-project.org/.
 It may be helpful to use RStudio, which is available at: https://rstudio.com/
@@ -14,7 +14,9 @@ Data that were not publicly available and were not generated in this project is 
 
 The following files are too large to be stored in this repository, which affects several code files. To obtain these, send @tonilogbo a message.
 > 2.txt
+
 > GRCh37_GENCODE_rmsk_TE.gtf
+
 > rmsk.saf
 
 
