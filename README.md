@@ -1,5 +1,5 @@
 # nORFs, HARs and TEs
-Instructions, R code, input files and supplementary data for a project studying regulation of nORF transcript expression in brain disorders.
+Instructions, R code, selected input files and supplementary data for a project studying regulation of nORF transcript expression in brain disorders.
 
 The latest version of R is available at: https://cran.r-project.org/.
 It may be helpful to use RStudio, which is available at: https://rstudio.com/
@@ -11,6 +11,14 @@ featureCounts can easily be installed on Ubuntu by ```sudo apt-get install featu
 For other systems, the instructions for installation are available at: http://bioinf.wehi.edu.au/subread-package/
 
 Data that were not publicly available and were not generated in this project is zipped and password-protected. To access these, send @tonilogbo a message.
+
+The following files are too large to be stored in this repository, which affects several code files. To obtain these, send @tonilogbo a message.
+> 2.txt
+
+> GRCh37_GENCODE_rmsk_TE.gtf
+
+> rmsk.saf
+
 
 # Enrichment of HAR-associated nORFs in disorder-linked loci
 Schizophrenia SNPs are available at: https://walters.psycm.cf.ac.uk/
@@ -63,7 +71,10 @@ gawk ' NR>1 { print $2,$5,$6 } ' [output].tags.list > [interval_file].int
 WTCNA.R contains code used to perform the WTCNA in this project. 
 
 # Correlation of nORF and TE transcript expression
-TE counts for 
+To obtain TE counts from BAM files using featureCounts:
+```
+featureCounts -M -F SAF -T 1 -s 2 -p -a rmsk.saf -o outfeatureCounts.txt *.bam
+```
 Pre-process the featureCounts output with counts.R and use correlation.R contains code to identify correlations between TE and nORF expression.
 
 # Other supplementary data for reference
