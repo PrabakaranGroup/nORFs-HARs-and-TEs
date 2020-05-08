@@ -66,5 +66,5 @@ WTCNA.R contains code used to perform the WTCNA in this project.
 TE counts for 
 Pre-process the featureCounts output with counts.R and use correlation.R contains code to identify correlations between TE and nORF expression.
 
-# Other Supplementary Data for reference
+# Other supplementary data for reference
 allStrongCorrelations.csv contains all strong TE-nORF correlations with an absolute Spearman/Pearson correlation > 0.8
